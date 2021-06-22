@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Locadora.Domain.Core", "Loc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Locadora.Domain.Services", "Locadora.Domain.Services\Locadora.Domain.Services.csproj", "{4AEDFB03-0D10-443E-A2CF-BA79501DBC3D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Locadora.Application", "Locadora.Application\Locadora.Application.csproj", "{9A40643D-F868-4891-B693-CA7DB41118B4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,10 @@ Global
 		{4AEDFB03-0D10-443E-A2CF-BA79501DBC3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4AEDFB03-0D10-443E-A2CF-BA79501DBC3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4AEDFB03-0D10-443E-A2CF-BA79501DBC3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A40643D-F868-4891-B693-CA7DB41118B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A40643D-F868-4891-B693-CA7DB41118B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A40643D-F868-4891-B693-CA7DB41118B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A40643D-F868-4891-B693-CA7DB41118B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -52,6 +58,7 @@ Global
 		{312219D0-2A4D-4A63-92A3-E190DACC9C71} = {514C652D-B610-4249-8675-2DE898D51B19}
 		{42B5B8FB-FAB9-4C30-8129-167ACDAE2248} = {514C652D-B610-4249-8675-2DE898D51B19}
 		{4AEDFB03-0D10-443E-A2CF-BA79501DBC3D} = {514C652D-B610-4249-8675-2DE898D51B19}
+		{9A40643D-F868-4891-B693-CA7DB41118B4} = {B3779619-F999-4041-BA0C-E84BF0F92F37}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {20247CAF-C168-4C45-B4A2-D43EFA8A2C7A}

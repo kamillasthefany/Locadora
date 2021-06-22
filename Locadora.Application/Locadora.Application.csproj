@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Locadora.Domain.Core\Locadora.Domain.Core.csproj" />
+    <ProjectReference Include="..\Locadora.Domain\Locadora.Domain.csproj" />
   </ItemGroup>
 
 </Project>

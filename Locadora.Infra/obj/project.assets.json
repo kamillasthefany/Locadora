@@ -282,6 +282,20 @@
           "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
         }
       },
+      "Locadora.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Locadora.Domain": "1.0.0",
+          "Locadora.Domain.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Locadora.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Locadora.Application.dll": {}
+        }
+      },
       "Locadora.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -914,6 +928,11 @@
         "version.txt"
       ]
     },
+    "Locadora.Application/1.0.0": {
+      "type": "project",
+      "path": "../Locadora.Application/Locadora.Application.csproj",
+      "msbuildProject": "../Locadora.Application/Locadora.Application.csproj"
+    },
     "Locadora.Domain/1.0.0": {
       "type": "project",
       "path": "../Locadora.Domain/Locadora.Domain.csproj",
@@ -933,6 +952,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Autofac >= 6.2.0",
+      "Locadora.Application >= 1.0.0",
       "Locadora.Domain >= 1.0.0",
       "Locadora.Domain.Core >= 1.0.0",
       "Locadora.Domain.Services >= 1.0.0",
@@ -972,6 +992,9 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
+            "C:\\Users\\kamil\\source\\repos\\Locadora\\Locadora.Application\\Locadora.Application.csproj": {
+              "projectPath": "C:\\Users\\kamil\\source\\repos\\Locadora\\Locadora.Application\\Locadora.Application.csproj"
+            },
             "C:\\Users\\kamil\\source\\repos\\Locadora\\Locadora.Domain.Core\\Locadora.Domain.Core.csproj": {
               "projectPath": "C:\\Users\\kamil\\source\\repos\\Locadora\\Locadora.Domain.Core\\Locadora.Domain.Core.csproj"
             },

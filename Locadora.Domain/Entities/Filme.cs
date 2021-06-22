@@ -11,7 +11,6 @@ namespace Locadora.Domain.Entities
         [MaxLength(255)]
         public string Titulo { get; set; }
 
-        [Required]
         [MaxLength(255)]
         public string Descricao { get; set; }
     }
