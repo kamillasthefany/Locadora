@@ -1,0 +1,10 @@
+C:\Users\kamil\source\repos\Locadora\Locadora.Infra\bin\Debug\netcoreapp3.1\Locadora.Infra.deps.json
+C:\Users\kamil\source\repos\Locadora\Locadora.Infra\bin\Debug\netcoreapp3.1\Locadora.Infra.dll
+C:\Users\kamil\source\repos\Locadora\Locadora.Infra\obj\Debug\netcoreapp3.1\Locadora.Infra.csprojAssemblyReference.cache
+C:\Users\kamil\source\repos\Locadora\Locadora.Infra\obj\Debug\netcoreapp3.1\Locadora.Infra.AssemblyInfoInputs.cache
+C:\Users\kamil\source\repos\Locadora\Locadora.Infra\obj\Debug\netcoreapp3.1\Locadora.Infra.AssemblyInfo.cs
+C:\Users\kamil\source\repos\Locadora\Locadora.Infra\bin\Debug\netcoreapp3.1\Locadora.Infra.runtimeconfig.json
+C:\Users\kamil\source\repos\Locadora\Locadora.Infra\bin\Debug\netcoreapp3.1\Locadora.Infra.runtimeconfig.dev.json
+C:\Users\kamil\source\repos\Locadora\Locadora.Infra\obj\Debug\netcoreapp3.1\Locadora.Infra.genruntimeconfig.cache
+C:\Users\kamil\source\repos\Locadora\Locadora.Infra\bin\Debug\netcoreapp3.1\Locadora.Domain.Core.dll
+C:\Users\kamil\source\repos\Locadora\Locadora.Infra\bin\Debug\netcoreapp3.1\Locadora.Domain.dll
