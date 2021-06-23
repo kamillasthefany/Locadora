@@ -138,8 +138,6 @@ C:\Users\kamil\source\repos\Locadora\Locadora.Presentation\obj\Debug\netcoreapp3
 C:\Users\kamil\source\repos\Locadora\Locadora.Presentation\bin\Debug\netcoreapp3.1\Autofac.Extensions.DependencyInjection.dll
 C:\Users\kamil\source\repos\Locadora\Locadora.Presentation\bin\Debug\netcoreapp3.1\Humanizer.dll
 C:\Users\kamil\source\repos\Locadora\Locadora.Presentation\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
-C:\Users\kamil\source\repos\Locadora\Locadora.Presentation\obj\Debug\netcoreapp3.1\Locadora.Presentation.csproj.CoreCompileInputs.cache
-C:\Users\kamil\source\repos\Locadora\Locadora.Presentation\obj\Debug\netcoreapp3.1\Locadora.Presentation.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\kamil\source\repos\Locadora\Locadora.Presentation\obj\Debug\netcoreapp3.1\Razor\Views\Filme\Create.cshtml.g.cs
 C:\Users\kamil\source\repos\Locadora\Locadora.Presentation\obj\Debug\netcoreapp3.1\Razor\Views\Filme\Edit.cshtml.g.cs
 C:\Users\kamil\source\repos\Locadora\Locadora.Presentation\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.Features.dll
