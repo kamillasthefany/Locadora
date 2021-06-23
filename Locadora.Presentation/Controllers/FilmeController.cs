@@ -56,7 +56,7 @@ namespace Locadora.Presentation.Controllers
 
         [HttpPost]
         public ActionResult Delete(FilmeDTO filme)
-        {
+        {        
             _service.Remove(filme);
             return RedirectToAction("Index");
         }

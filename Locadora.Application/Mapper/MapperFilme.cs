@@ -13,15 +13,19 @@ namespace Locadora.Application.Mapper
         {
             var filme = new Filme
             {
+                Id = filmeDTO.Id,
                 Titulo = filmeDTO.Titulo,
                 Descricao = filmeDTO.Descricao
             };
 
-            using (var memoryStream = new MemoryStream())
+            if (filmeDTO.Capa != null)
             {
-                filmeDTO.Capa.CopyTo(memoryStream);
-                filme.ContentType = filmeDTO.Capa.ContentType;
-                filme.Capa = memoryStream.ToArray();
+                using (var memoryStream = new MemoryStream())
+                {
+                    filmeDTO.Capa.CopyTo(memoryStream);
+                    filme.ContentType = filmeDTO.Capa.ContentType;
+                    filme.Capa = memoryStream.ToArray();
+                }
             }
 
             return filme;

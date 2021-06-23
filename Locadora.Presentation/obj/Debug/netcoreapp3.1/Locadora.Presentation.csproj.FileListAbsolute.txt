@@ -146,3 +146,4 @@ C:\Users\kamil\source\repos\Locadora\Locadora.Presentation\bin\Debug\netcoreapp3
 C:\Users\kamil\source\repos\Locadora\Locadora.Presentation\bin\Debug\netcoreapp3.1\System.IO.Pipelines.dll
 C:\Users\kamil\source\repos\Locadora\Locadora.Presentation\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\kamil\source\repos\Locadora\Locadora.Presentation\obj\Debug\netcoreapp3.1\Razor\Views\Filme\Details.cshtml.g.cs
+C:\Users\kamil\source\repos\Locadora\Locadora.Presentation\obj\Debug\netcoreapp3.1\Razor\Views\Filme\Delete.cshtml.g.cs
