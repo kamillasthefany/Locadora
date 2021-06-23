@@ -33,7 +33,9 @@ namespace Locadora.Application.Mapper
             {
                 Id = filme.Id,
                 Titulo = filme.Titulo,
-                Descricao = filme.Descricao
+                Descricao = filme.Descricao,
+                CapaByte = filme.Capa,
+                ContentType = filme.ContentType
             };
         }
 

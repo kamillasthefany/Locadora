@@ -28,7 +28,7 @@ namespace Locadora.Presentation.Controllers
 
         [HttpPost]
         public ActionResult Create(FilmeDTO filme)
-        {  
+        {
             _service.Add(filme);
             return RedirectToAction("Index");
         }
@@ -65,6 +65,12 @@ namespace Locadora.Presentation.Controllers
         {
             var filme = _service.GetById(id);
             return View(filme);
+        }
+
+        public ActionResult Capa(int id)
+        {
+            var filme = _service.GetById(id);
+            return File(filme.CapaByte, filme.ContentType);
         }
     }
 }

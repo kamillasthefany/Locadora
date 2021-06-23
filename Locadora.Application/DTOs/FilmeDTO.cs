@@ -21,5 +21,7 @@ namespace Locadora.Application.DTOs
 
         [Display(Name = "Capa do Filme")] 
         public IFormFile Capa { get; set; }
+
+        public byte[] CapaByte { get; set; }
     }
 }
