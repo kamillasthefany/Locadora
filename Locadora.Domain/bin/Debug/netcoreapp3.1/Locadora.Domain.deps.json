@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Locadora.Domain/1.0.0": {
+        "runtime": {
+          "Locadora.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Locadora.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

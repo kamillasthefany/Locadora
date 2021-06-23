@@ -18,6 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Locadora.Application\Locadora.Application.csproj" />
     <ProjectReference Include="..\Locadora.Domain.Core\Locadora.Domain.Core.csproj" />
     <ProjectReference Include="..\Locadora.Domain.Services\Locadora.Domain.Services.csproj" />
     <ProjectReference Include="..\Locadora.Domain\Locadora.Domain.csproj" />

@@ -13,15 +13,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infra", "4 - Infra", "{82CCCC5B-6CAE-43E0-9033-07E8C37F1920}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Locadora.Infra", "Locadora.Infra\Locadora.Infra.csproj", "{3454762F-7EFD-49B4-B0A0-D577664C4A37}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Locadora.Infra", "Locadora.Infra\Locadora.Infra.csproj", "{3454762F-7EFD-49B4-B0A0-D577664C4A37}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Locadora.Domain", "Locadora.Domain\Locadora.Domain.csproj", "{312219D0-2A4D-4A63-92A3-E190DACC9C71}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Locadora.Domain", "Locadora.Domain\Locadora.Domain.csproj", "{312219D0-2A4D-4A63-92A3-E190DACC9C71}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Locadora.Domain.Core", "Locadora.Domain.Core\Locadora.Domain.Core.csproj", "{42B5B8FB-FAB9-4C30-8129-167ACDAE2248}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Locadora.Domain.Core", "Locadora.Domain.Core\Locadora.Domain.Core.csproj", "{42B5B8FB-FAB9-4C30-8129-167ACDAE2248}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Locadora.Domain.Services", "Locadora.Domain.Services\Locadora.Domain.Services.csproj", "{4AEDFB03-0D10-443E-A2CF-BA79501DBC3D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Locadora.Domain.Services", "Locadora.Domain.Services\Locadora.Domain.Services.csproj", "{4AEDFB03-0D10-443E-A2CF-BA79501DBC3D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Locadora.Application", "Locadora.Application\Locadora.Application.csproj", "{9A40643D-F868-4891-B693-CA7DB41118B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Locadora.Application", "Locadora.Application\Locadora.Application.csproj", "{9A40643D-F868-4891-B693-CA7DB41118B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Locadora.Presentation", "Locadora.Presentation\Locadora.Presentation.csproj", "{F6CF1B09-D824-44F1-A32C-A80411841877}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +51,10 @@ Global
 		{9A40643D-F868-4891-B693-CA7DB41118B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A40643D-F868-4891-B693-CA7DB41118B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A40643D-F868-4891-B693-CA7DB41118B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6CF1B09-D824-44F1-A32C-A80411841877}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6CF1B09-D824-44F1-A32C-A80411841877}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6CF1B09-D824-44F1-A32C-A80411841877}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6CF1B09-D824-44F1-A32C-A80411841877}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -59,6 +65,7 @@ Global
 		{42B5B8FB-FAB9-4C30-8129-167ACDAE2248} = {514C652D-B610-4249-8675-2DE898D51B19}
 		{4AEDFB03-0D10-443E-A2CF-BA79501DBC3D} = {514C652D-B610-4249-8675-2DE898D51B19}
 		{9A40643D-F868-4891-B693-CA7DB41118B4} = {B3779619-F999-4041-BA0C-E84BF0F92F37}
+		{F6CF1B09-D824-44F1-A32C-A80411841877} = {9AD6CE0F-39FD-4A48-B29B-6C3AC44A32E9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {20247CAF-C168-4C45-B4A2-D43EFA8A2C7A}

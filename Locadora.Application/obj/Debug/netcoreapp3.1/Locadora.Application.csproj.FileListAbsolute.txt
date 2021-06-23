@@ -1,0 +1,14 @@
+C:\Users\kamil\source\repos\Locadora\Locadora.Application\bin\Debug\netcoreapp3.1\Locadora.Application.deps.json
+C:\Users\kamil\source\repos\Locadora\Locadora.Application\bin\Debug\netcoreapp3.1\Locadora.Application.dll
+C:\Users\kamil\source\repos\Locadora\Locadora.Application\bin\Debug\netcoreapp3.1\Locadora.Application.pdb
+C:\Users\kamil\source\repos\Locadora\Locadora.Application\bin\Debug\netcoreapp3.1\Locadora.Domain.Core.dll
+C:\Users\kamil\source\repos\Locadora\Locadora.Application\bin\Debug\netcoreapp3.1\Locadora.Domain.dll
+C:\Users\kamil\source\repos\Locadora\Locadora.Application\bin\Debug\netcoreapp3.1\Locadora.Domain.Core.pdb
+C:\Users\kamil\source\repos\Locadora\Locadora.Application\bin\Debug\netcoreapp3.1\Locadora.Domain.pdb
+C:\Users\kamil\source\repos\Locadora\Locadora.Application\obj\Debug\netcoreapp3.1\Locadora.Application.csprojAssemblyReference.cache
+C:\Users\kamil\source\repos\Locadora\Locadora.Application\obj\Debug\netcoreapp3.1\Locadora.Application.AssemblyInfoInputs.cache
+C:\Users\kamil\source\repos\Locadora\Locadora.Application\obj\Debug\netcoreapp3.1\Locadora.Application.AssemblyInfo.cs
+C:\Users\kamil\source\repos\Locadora\Locadora.Application\obj\Debug\netcoreapp3.1\Locadora.Application.csproj.CoreCompileInputs.cache
+C:\Users\kamil\source\repos\Locadora\Locadora.Application\obj\Debug\netcoreapp3.1\Locadora.Application.csproj.CopyComplete
+C:\Users\kamil\source\repos\Locadora\Locadora.Application\obj\Debug\netcoreapp3.1\Locadora.Application.dll
+C:\Users\kamil\source\repos\Locadora\Locadora.Application\obj\Debug\netcoreapp3.1\Locadora.Application.pdb
