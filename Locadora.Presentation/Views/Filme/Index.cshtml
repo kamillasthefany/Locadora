@@ -13,6 +13,9 @@
     <thead>
         <tr>
             <th>
+
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.Id)
             </th>
             <th>
@@ -28,6 +31,9 @@
         @foreach (var item in Model)
         {
             <tr>
+                <td>
+                    <img src="@Url.Action("ObterCapa", "Filme", new { id = item.Id })" width="100" height="100"/>
+                </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.Id)
                 </td>

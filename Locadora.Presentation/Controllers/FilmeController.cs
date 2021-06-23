@@ -67,10 +67,16 @@ namespace Locadora.Presentation.Controllers
             return View(filme);
         }
 
-        public ActionResult Capa(int id)
+        public ActionResult ObterCapa(int id)
         {
             var filme = _service.GetById(id);
-            return File(filme.CapaByte, filme.ContentType);
+
+            if (!string.IsNullOrEmpty(filme.ContentType))
+            {
+                return File(filme.CapaByte, filme.ContentType);
+            }
+
+            return File("images/not-found.jpg", "image/jpeg");
         }
     }
 }
