@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="5.0.7" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Locadora.Domain.Core\Locadora.Domain.Core.csproj" />
     <ProjectReference Include="..\Locadora.Domain\Locadora.Domain.csproj" />
   </ItemGroup>

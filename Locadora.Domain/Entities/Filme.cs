@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Text;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace Locadora.Domain.Entities
 {
@@ -13,5 +10,9 @@ namespace Locadora.Domain.Entities
 
         [MaxLength(255)]
         public string Descricao { get; set; }
+
+        [MaxLength(50)]
+        public string ContentType { get; set; }    
+        public byte[] Capa { get; set; }
     }
 }

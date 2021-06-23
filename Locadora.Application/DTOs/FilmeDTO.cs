@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Http;
+using System.ComponentModel.DataAnnotations;
 
 namespace Locadora.Application.DTOs
 {
@@ -14,5 +15,11 @@ namespace Locadora.Application.DTOs
         [MaxLength(255)]
         [Display(Name = "Descrição")]
         public string Descricao { get; set; }
+
+        [MaxLength(50)]
+        public string ContentType { get; set; }
+
+        [Display(Name = "Capa do Filme")] 
+        public IFormFile Capa { get; set; }
     }
 }

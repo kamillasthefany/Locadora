@@ -3,15 +3,17 @@ using System;
 using Locadora.Infra.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace Locadora.Infra.Migrations
 {
     [DbContext(typeof(LocadoraContext))]
-    partial class LocadoraContextModelSnapshot : ModelSnapshot
+    [Migration("20210623002225_AdicaoCapa")]
+    partial class AdicaoCapa
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -29,10 +31,6 @@ namespace Locadora.Infra.Migrations
                     b.Property<byte[]>("Capa")
                         .HasColumnType("bytea");
 
-                    b.Property<string>("ContentType")
-                        .HasMaxLength(50)
-                        .HasColumnType("character varying(50)");
-
                     b.Property<DateTime>("DataCadastro")
                         .HasColumnType("timestamp without time zone");
 
@@ -47,6 +45,9 @@ namespace Locadora.Infra.Migrations
                         .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("character varying(255)");
+
+                    b.Property<string>("TypeMime")
+                        .HasColumnType("text");
 
                     b.Property<DateTime>("UltimaAlteracao")
                         .HasColumnType("timestamp without time zone");

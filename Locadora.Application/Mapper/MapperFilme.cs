@@ -2,6 +2,7 @@
 using Locadora.Application.Interfaces.Mapper;
 using Locadora.Domain.Entities;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 
 namespace Locadora.Application.Mapper
@@ -10,11 +11,20 @@ namespace Locadora.Application.Mapper
     {
         public Filme MapperDTOToEntity(FilmeDTO filmeDTO)
         {
-            return new Filme
+            var filme = new Filme
             {
                 Titulo = filmeDTO.Titulo,
                 Descricao = filmeDTO.Descricao
             };
+
+            using (var memoryStream = new MemoryStream())
+            {
+                filmeDTO.Capa.CopyTo(memoryStream);
+                filme.ContentType = filmeDTO.Capa.ContentType;
+                filme.Capa = memoryStream.ToArray();
+            }
+
+            return filme;
         }
 
         public FilmeDTO MapperEntityToDTO(Filme filme)
