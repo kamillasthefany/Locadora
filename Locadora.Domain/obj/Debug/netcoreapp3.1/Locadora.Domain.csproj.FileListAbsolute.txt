@@ -1,9 +1,0 @@
-C:\Users\kamil\source\repos\Locadora\Locadora.Domain\bin\Debug\netcoreapp3.1\Locadora.Domain.deps.json
-C:\Users\kamil\source\repos\Locadora\Locadora.Domain\bin\Debug\netcoreapp3.1\Locadora.Domain.dll
-C:\Users\kamil\source\repos\Locadora\Locadora.Domain\bin\Debug\netcoreapp3.1\Locadora.Domain.pdb
-C:\Users\kamil\source\repos\Locadora\Locadora.Domain\obj\Debug\netcoreapp3.1\Locadora.Domain.csprojAssemblyReference.cache
-C:\Users\kamil\source\repos\Locadora\Locadora.Domain\obj\Debug\netcoreapp3.1\Locadora.Domain.AssemblyInfoInputs.cache
-C:\Users\kamil\source\repos\Locadora\Locadora.Domain\obj\Debug\netcoreapp3.1\Locadora.Domain.AssemblyInfo.cs
-C:\Users\kamil\source\repos\Locadora\Locadora.Domain\obj\Debug\netcoreapp3.1\Locadora.Domain.csproj.CoreCompileInputs.cache
-C:\Users\kamil\source\repos\Locadora\Locadora.Domain\obj\Debug\netcoreapp3.1\Locadora.Domain.dll
-C:\Users\kamil\source\repos\Locadora\Locadora.Domain\obj\Debug\netcoreapp3.1\Locadora.Domain.pdb
