@@ -2,6 +2,6 @@
 {
     public class Constants
     {
-        public const int TAMANHO_PAGINA = 3;
+        public const int TAMANHO_PAGINA = 4;
     }
 }

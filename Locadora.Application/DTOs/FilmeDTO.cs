@@ -7,12 +7,12 @@ namespace Locadora.Application.DTOs
     {
         public int Id { get; set; }
 
-        [MaxLength(255)]
+        [MaxLength(50)]
         [Display(Name = "Título")]
         [Required(ErrorMessage = "Informe o título")]
         public string Titulo { get; set; }
 
-        [MaxLength(255)]
+        [MaxLength(50)]
         [Display(Name = "Descrição")]
         public string Descricao { get; set; }
 
