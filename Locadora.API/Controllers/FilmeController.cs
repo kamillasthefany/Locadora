@@ -21,15 +21,29 @@ namespace Locadora.API.Controllers
         }
 
         [HttpGet]
-        public ActionResult<IEnumerable<FilmeDTO>> Get()
+        public ActionResult<IEnumerable<FilmeDTO>> Get([FromQuery]string busca)
         {
-            return Ok(_applicationServiceFilme.GetAll());
+            try
+            {
+                return Ok(_applicationServiceFilme.GetAll(busca));
+            }
+            catch (Exception exc)
+            {
+                throw exc;
+            }           
         }
 
         [HttpGet("{id}")]
         public ActionResult<FilmeDTO> Get(int id)
         {
-            return Ok(_applicationServiceFilme.GetById(id));
+            try
+            {
+                return Ok(_applicationServiceFilme.GetById(id));
+            }
+            catch (Exception exc)
+            {                
+                throw exc;
+            }            
         }
 
         [HttpPost]

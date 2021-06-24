@@ -16,17 +16,7 @@ namespace Locadora.Application.Mapper
                 Id = filmeDTO.Id,
                 Titulo = filmeDTO.Titulo,
                 Descricao = filmeDTO.Descricao
-            };
-
-            if (filmeDTO.Capa != null)
-            {
-                using (var memoryStream = new MemoryStream())
-                {
-                    filmeDTO.Capa.CopyTo(memoryStream);
-                    filme.ContentType = filmeDTO.Capa.ContentType;
-                    filme.Capa = memoryStream.ToArray();
-                }
-            }
+            };   
 
             return filme;
         }

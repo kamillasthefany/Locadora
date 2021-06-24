@@ -25,9 +25,9 @@
         <img src="@Url.Action("ObterCapa", "Filme", new {  id = Model.Id  })" width="200" height="250" style="border-radius: 5px;" />
     </div>
     <br />
-    <form asp-action="Edit">
+    <div>
         <a class="btn btn-outline-secondary btn-sm" asp-action="Index">Voltar</a>
-        <input type="submit" value="Editar" class="btn btn-primary btn-sm" />
-    </form>
+        <a class="btn btn-primary btn-sm" asp-action="Edit" asp-route-id="@Model.Id">Editar</a>
+    </div>
 </div>
 

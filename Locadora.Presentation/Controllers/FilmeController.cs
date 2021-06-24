@@ -1,6 +1,7 @@
 ﻿using Locadora.Application.DTOs;
 using Locadora.Application.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+using System;
 
 namespace Locadora.Presentation.Controllers
 {
@@ -15,68 +16,146 @@ namespace Locadora.Presentation.Controllers
 
         public IActionResult Index()
         {
-            var filmes = _service.GetAll();
-            return View(filmes);
+            try
+            {
+                var filmes = _service.GetAll();
+                return View(filmes);
+            }
+            catch (Exception exc)
+            {
+                throw exc;
+            }
+
         }
 
         [HttpGet]
         public ActionResult Create()
         {
-            FilmeDTO filme = new FilmeDTO();
-            return View(filme);
+            try
+            {
+                FilmeDTO filme = new FilmeDTO();
+                return View(filme);
+            }
+            catch (Exception exc)
+            {
+                throw exc;
+            }
         }
 
         [HttpPost]
         public ActionResult Create(FilmeDTO filme)
         {
-            _service.Add(filme);
-            return RedirectToAction("Index");
+            try
+            {
+                _service.Add(filme);
+                return RedirectToAction("Index");
+            }
+            catch (Exception exc)
+            {
+                throw exc;
+            }
         }
 
         [HttpGet]
         public ActionResult Edit(int id)
         {
-            var filme = _service.GetById(id);
-            return View(filme);
+            try
+            {
+                var filme = _service.GetById(id);
+                return View(filme);
+            }
+            catch (Exception exc)
+            {
+                throw exc;
+            }
+
         }
 
         [HttpPost]
         public ActionResult Edit(FilmeDTO filme)
         {
-            _service.Update(filme);
-            return RedirectToAction("Index");
+            try
+            {
+                _service.Update(filme);
+                return RedirectToAction("Index");
+            }
+            catch (Exception exc)
+            {
+                throw exc;
+            }
         }
 
         [HttpGet]
         public ActionResult Delete(int id)
         {
-            var filme = _service.GetById(id);
-            return View(filme);
+            try
+            {
+                var filme = _service.GetById(id);
+                return View(filme);
+            }
+            catch (Exception exc)
+            {
+                throw exc;
+            }
         }
 
         [HttpPost]
         public ActionResult Delete(FilmeDTO filme)
-        {        
-            _service.Remove(filme);
-            return RedirectToAction("Index");
+        {
+            try
+            {
+                _service.Remove(filme);
+                return RedirectToAction("Index");
+            }
+            catch (Exception exc)
+            {
+                throw exc;
+            }
+       
         }
 
         public ActionResult Details(int id)
         {
-            var filme = _service.GetById(id);
-            return View(filme);
+            try
+            {
+                var filme = _service.GetById(id);
+                return View(filme);
+            }
+            catch (Exception exc)
+            {
+                throw exc;
+            }    
         }
 
         public ActionResult ObterCapa(int id)
         {
-            var filme = _service.GetById(id);
-
-            if (!string.IsNullOrEmpty(filme.ContentType))
+            try
             {
-                return File(filme.CapaByte, filme.ContentType);
-            }
+                var filme = _service.GetById(id);
 
-            return File("images/not-found.jpg", "image/jpeg");
+                if (!string.IsNullOrEmpty(filme.ContentType))
+                {
+                    return File(filme.CapaByte, filme.ContentType);
+                }
+
+                return File("images/not-found.jpg", "image/jpeg");
+            }
+            catch (Exception exc)
+            {
+                throw exc;
+            }
+        }
+
+        private FilmeDTO ObterBytesCapa(int id)
+        {
+            try
+            {
+                return _service.GetById(id);
+            }
+            catch (Exception exc)
+            {
+                throw exc;
+            }
         }
     }
 }
