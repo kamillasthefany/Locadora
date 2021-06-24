@@ -1,7 +1,7 @@
 ﻿@model Locadora.Application.DTOs.FilmeDTO
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Detalhes";
 }
 <br />
 <div>
@@ -22,7 +22,7 @@
         </dd>
     </dl>
     <div>
-        <img src="@Url.Action("ObterCapa", "Filme", new {  id = Model.Id  })" width="200" height="250" style="border-radius: 5px;" />
+        <img src="@Url.Action("ObterCapa", "Filme", new {  id = Model.Id  })" width="200" height="300" style="border-radius: 5px;" />
     </div>
     <br />
     <div>
