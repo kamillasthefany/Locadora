@@ -1,7 +1,9 @@
-<h3 align="center">Olá</h3>
+<h3 align="left">Olá</h3>
 
-<p align="center">Esse projeto foi criado apenas para demostrar conceitos. Ele apresenta princípios de arquitetura de software, DDD e SOLID. </p>
-<p>Você pode acessá-lo neste <a href="https://rebobina-vhs.herokuapp.com" target="blank">link</a>
+<p align="left">Esse projeto foi criado apenas para demostrar conceitos. </p>
+<p align="left">Ele apresenta princípios de arquitetura de software, DDD e SOLID. </p>
+<p align="left">Você pode acessá-lo neste
+  <a href="https://rebobina-vhs.herokuapp.com" target="blank">link</a>.
 </p>
 
 <h3 align="left">Tecnologias utilizadas:</h3>
