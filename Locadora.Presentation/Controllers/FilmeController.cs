@@ -17,11 +17,11 @@ namespace Locadora.Presentation.Controllers
             _service = applicationService;
         }
 
-        public IActionResult Index([FromQuery]int pagina = 1)
+        public IActionResult Index([FromQuery]int pagina = 1, string busca = "")
         {
             try
             {
-                var filmes = _service.GetAll().OrderBy(c => c.Titulo);
+                var filmes = _service.GetAll(busca).OrderBy(c => c.Titulo);
                 return View(filmes.ToPagedList(pagina, Constants.TAMANHO_PAGINA));
             }
             catch (Exception exc)

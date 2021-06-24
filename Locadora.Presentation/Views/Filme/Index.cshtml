@@ -1,8 +1,6 @@
 ﻿@model X.PagedList.IPagedList<Locadora.Application.DTOs.FilmeDTO>
-@using X.PagedList.Mvc.Core; 
-@using X.PagedList; 
-@using X.PagedList.Mvc.Core.Fluent
-@using X.PagedList.Web.Common
+@using X.PagedList.Mvc.Core;
+@using X.PagedList;
 
 @{
     ViewData["Title"] = "Index";
@@ -11,6 +9,17 @@
 <main class="container">
     <div class="row">
         <a class="btn btn-primary btn-sm" asp-controller="Filme" asp-action="Create">Cadastrar Filme</a>
+    </div>
+    <br />
+    <div class="row">
+        <form>
+            <div class="col-md-9">
+                <input type="text" class="form-control" name="busca"/>
+            </div>
+            <div class="col-md-3">
+                <button type="submit" class="btn btn-primary">Consultar</button>
+            </div>
+        </form>
     </div>
     <br />
     <div class="row">
@@ -42,7 +51,7 @@
     </div>
     <div class="row">
         <div class="col-md-8">
-            @Html.PagedListPager((IPagedList)Model, page => Url.Action("Index", new { pagina = page}))
+            @Html.PagedListPager((IPagedList)Model, page => Url.Action("Index", new { pagina = page }))
         </div>
         <div class="col-md-4">
             <span class="pull-right">
