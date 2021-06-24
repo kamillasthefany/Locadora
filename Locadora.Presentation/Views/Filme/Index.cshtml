@@ -1,4 +1,8 @@
-﻿@model IEnumerable<Locadora.Application.DTOs.FilmeDTO>
+﻿@model X.PagedList.IPagedList<Locadora.Application.DTOs.FilmeDTO>
+@using X.PagedList.Mvc.Core; 
+@using X.PagedList; 
+@using X.PagedList.Mvc.Core.Fluent
+@using X.PagedList.Web.Common
 
 @{
     ViewData["Title"] = "Index";
@@ -35,5 +39,15 @@
                 </div>
             </div>
         }
+    </div>
+    <div class="row">
+        <div class="col-md-8">
+            @Html.PagedListPager((IPagedList)Model, page => Url.Action("Index", new { pagina = page}))
+        </div>
+        <div class="col-md-4">
+            <span class="pull-right">
+                @Model.FirstItemOnPage a @Model.LastItemOnPage de @Model.TotalItemCount
+            </span>
+        </div>
     </div>
 </main>

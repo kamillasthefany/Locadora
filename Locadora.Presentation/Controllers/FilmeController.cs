@@ -2,6 +2,9 @@
 using Locadora.Application.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using System;
+using X.PagedList;
+using Locadora.Domain.Utils;
+using System.Linq;
 
 namespace Locadora.Presentation.Controllers
 {
@@ -14,18 +17,17 @@ namespace Locadora.Presentation.Controllers
             _service = applicationService;
         }
 
-        public IActionResult Index()
+        public IActionResult Index([FromQuery]int pagina = 1)
         {
             try
             {
-                var filmes = _service.GetAll();
-                return View(filmes);
+                var filmes = _service.GetAll().OrderBy(c => c.Titulo);
+                return View(filmes.ToPagedList(pagina, Constants.TAMANHO_PAGINA));
             }
             catch (Exception exc)
             {
                 throw exc;
             }
-
         }
 
         [HttpGet]
@@ -111,7 +113,7 @@ namespace Locadora.Presentation.Controllers
             {
                 throw exc;
             }
-       
+
         }
 
         public ActionResult Details(int id)
@@ -124,7 +126,7 @@ namespace Locadora.Presentation.Controllers
             catch (Exception exc)
             {
                 throw exc;
-            }    
+            }
         }
 
         public ActionResult ObterCapa(int id)
